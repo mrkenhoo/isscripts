@@ -1,5 +1,5 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.13.10"
+#define MyAppVersion "0.0.13.11"
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"
@@ -19,7 +19,7 @@ DefaultGroupName=mrkenhoo\sunvalley-srw
 AllowNoIcons=yes
 LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog
-OutputDir=C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\inno_setup
+OutputDir=C:\Users\{#MyUsername}\Documents\GitHub\isscripts\sunvalley-srw
 OutputBaseFilename=sunvalley-srw-setup
 Compression=lzma
 SolidCompression=yes
@@ -55,10 +55,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Type: filesandordirs; Name: {app}\*;
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations_v5\bin\x64\Release\net6.0-windows10.0.22621.0\publish\win-x64\*"; DestDir: "{app}"; \
-                                                                                                       Flags: ignoreversion recursesubdirs createallsubdirs; \
-                                                                                                       Components: corefiles; \
-                                                                                                       MinVersion: 10.0.19041
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\binaries\*"; DestDir: "{app}"; \
+                                                                            Flags: ignoreversion recursesubdirs createallsubdirs; \
+                                                                            Components: corefiles; \
+                                                                            MinVersion: 10.0.19041
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
