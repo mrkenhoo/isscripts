@@ -1,7 +1,7 @@
 #define ProjectName "SystemReadinessWorkstations"
 #define MyAppName "System Readiness for Workstations"
 #define MyAppVersion "1.0.0.0"
-#define MyAppURL "https://github.com/mrkenhoo/SystemReadiness"
+#define MyAppURL "https://github.com/mrkenhoo/SystemReadinessWorkstations"
 #define MyAppExeName "SystemReadinessWorkstations.exe"
 #define MyUsername "mrkenhoo"
 #define VersionInfoDescription "System Readiness for Workstations"
@@ -18,17 +18,17 @@ UsePreviousAppDir=no
 DefaultDirName={autopf64}\mrkenhoo\SystemReadiness\Workstations
 DefaultGroupName=mrkenhoo\System Readiness\Workstations
 AllowNoIcons=yes
-LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\SystemReadiness\LICENSE
+LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=C:\Users\{#MyUsername}\Documents\GitHub\isscripts\{#ProjectName}
-OutputBaseFilename={#ProjectName}-Setup
+OutputBaseFilename={#ProjectName}Installer
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
 VersionInfoCompany=Ken Hoo
 VersionInfoCopyright=GNU General Public License v3.0
 VersionInfoDescription={#VersionInfoDescription}
-VersionInfoOriginalFileName={#ProjectName}-Setup.exe
+VersionInfoOriginalFileName={#ProjectName}Installer.exe
 VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
 VersionInfoProductTextVersion={#MyAppVersion}
@@ -57,11 +57,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Type: filesandordirs; Name: {app}\*;
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadiness\build\SystemReadinessCore.dll"; DestDir: "{app}"; \
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadinessCore\build\SystemReadinessCore.dll"; DestDir: "{app}"; \
                                                                                                  Flags: ignoreversion; \
                                                                                                  Components: corefiles; \
                                                                                                  MinVersion: 10.0.19041
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadiness\build\*"; DestDir: "{app}"; \
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadinessWorkstations\build\*"; DestDir: "{app}"; \
                                                                            Flags: ignoreversion recursesubdirs createallsubdirs; \
                                                                            Components: programfiles; \
                                                                            Excludes: SystemReadinessCore.dll; \
