@@ -10,13 +10,13 @@
 AppId={{28B11907-066D-4911-BA15-E70234360C28}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
-AppVerName={#MyAppName} {#MyAppVersion}
+AppVerName={#MyAppName}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}/releases
 UsePreviousAppDir=no
 DefaultDirName={autopf64}\mrkenhoo\SystemReadiness\Workstations
-DefaultGroupName=mrkenhoo\System Readiness\Workstations
+DefaultGroupName={#MyUsername}\System Readiness\Workstations
 AllowNoIcons=yes
 LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog
