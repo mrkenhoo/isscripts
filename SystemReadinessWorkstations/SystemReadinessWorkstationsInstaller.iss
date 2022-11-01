@@ -61,7 +61,7 @@ Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadinessCore\build\Syste
                                                                                                  Flags: ignoreversion; \
                                                                                                  Components: corefiles; \
                                                                                                  MinVersion: 10.0.19041
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadinessWorkstations\build\*"; DestDir: "{app}"; \
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\build\*"; DestDir: "{app}"; \
                                                                            Flags: ignoreversion recursesubdirs createallsubdirs; \
                                                                            Components: programfiles; \
                                                                            Excludes: SystemReadinessCore.dll; \
