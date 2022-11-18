@@ -1,5 +1,5 @@
 #define MyAppName "Windows CLI Installer Tool"
-#define MyAppVersion "0.0.1.4"
+#define MyAppVersion "0.0.1.5"
 #define MyAppURL "https://github.com/mrkenhoo/wcit"
 #define MyAppExeName "wcit.exe"
 #define MyUsername "mrkenhoo"
@@ -52,7 +52,7 @@ Name: "corefiles"; Description: "Required program files"; Types: full; Flags: fi
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\wcit\bin\Release\net6.0-windows10.0.22621.0\publish\win-x64\*"; \
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\wcit\bin\Release\net7.0-windows10.0.22621.0\publish\win-x64\*"; \
       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: corefiles; MinVersion: 6.1sp1;
 
 [Icons]
