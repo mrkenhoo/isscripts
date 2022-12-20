@@ -1,6 +1,6 @@
 #define ProjectName "SystemReadinessWorkstations"
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "1.0.0.2"
+#define MyAppVersion "1.0.1.0"
 #define MyAppURL "https://github.com/mrkenhoo/SystemReadinessWorkstations"
 #define MyAppExeName "SystemReadinessWorkstations.exe"
 #define MyUsername "mrkenhoo"
@@ -58,14 +58,14 @@ Type: filesandordirs; Name: {app}\*;
 
 [Files]
 Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadinessCore\build\SystemReadinessCore.dll"; DestDir: "{app}"; \
-                                                                                                 Flags: ignoreversion; \
-                                                                                                 Components: corefiles; \
-                                                                                                 MinVersion: 10.0.19041
+                                                                                                     Flags: ignoreversion; \
+                                                                                                     Components: corefiles; \
+                                                                                                     MinVersion: 10.0.19041
 Source: "C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\build\*"; DestDir: "{app}"; \
-                                                                           Flags: ignoreversion recursesubdirs createallsubdirs; \
-                                                                           Components: programfiles; \
-                                                                           Excludes: SystemReadinessCore.dll; \
-                                                                           MinVersion: 10.0.19041
+                                                                          Flags: ignoreversion recursesubdirs createallsubdirs; \
+                                                                          Components: programfiles; \
+                                                                          Excludes: SystemReadinessCore.dll; \
+                                                                          MinVersion: 10.0.19041
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
