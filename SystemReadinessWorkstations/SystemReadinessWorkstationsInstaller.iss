@@ -1,6 +1,6 @@
 #define ProjectName "SystemReadinessWorkstations"
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "1.0.1.0"
+#define MyAppVersion "1.0.1.1"
 #define MyAppURL "https://github.com/mrkenhoo/SystemReadinessWorkstations"
 #define MyAppExeName "SystemReadinessWorkstations.exe"
 #define MyUsername "mrkenhoo"
@@ -15,8 +15,8 @@ AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}/releases
 UsePreviousAppDir=no
-DefaultDirName={autopf64}\mrkenhoo\SystemReadiness\Workstations
-DefaultGroupName={#MyUsername}\System Readiness\Workstations
+DefaultDirName={autopf64}\mrkenhoo\{#ProjectName}
+DefaultGroupName={#MyUsername}\{#MyAppName}
 AllowNoIcons=yes
 LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog
@@ -57,15 +57,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Type: filesandordirs; Name: {app}\*;
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\SystemReadinessCore\build\SystemReadinessCore.dll"; DestDir: "{app}"; \
-                                                                                                     Flags: ignoreversion; \
-                                                                                                     Components: corefiles; \
-                                                                                                     MinVersion: 10.0.19041
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\build\*"; DestDir: "{app}"; \
-                                                                          Flags: ignoreversion recursesubdirs createallsubdirs; \
-                                                                          Components: programfiles; \
-                                                                          Excludes: SystemReadinessCore.dll; \
-                                                                          MinVersion: 10.0.19041
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\bin\x64\Release\net7.0-windows10.0.22621.0\publish\win-x64"; DestDir: "{app}"; \
+                                                                                                                             Flags: ignoreversion recursesubdirs createallsubdirs; \
+                                                                                                                             Components: programfiles; \
+                                                                                                                             MinVersion: 10.0.19041
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
