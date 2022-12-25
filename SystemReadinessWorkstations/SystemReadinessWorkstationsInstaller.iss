@@ -1,6 +1,6 @@
 #define ProjectName "SystemReadinessWorkstations"
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "1.0.1.1"
+#define MyAppVersion "1.0.1.2"
 #define MyAppURL "https://github.com/mrkenhoo/SystemReadinessWorkstations"
 #define MyAppExeName "SystemReadinessWorkstations.exe"
 #define MyUsername "mrkenhoo"
