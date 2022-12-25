@@ -57,7 +57,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Type: filesandordirs; Name: {app}\*;
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\bin\x64\Release\net7.0-windows10.0.22621.0\publish\win-x64"; DestDir: "{app}"; \
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\{#ProjectName}\bin\x64\Release\net7.0-windows10.0.22621.0\publish\win-x64\*"; DestDir: "{app}"; \
                                                                                                                              Flags: ignoreversion recursesubdirs createallsubdirs; \
                                                                                                                              Components: programfiles; \
                                                                                                                              MinVersion: 10.0.19041
