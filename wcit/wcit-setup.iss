@@ -52,7 +52,7 @@ Name: "corefiles"; Description: "Required program files"; Types: full; Flags: fi
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\wcit\Client\bin\x64\Release\net7.0-windows10.0.22621.0\publish\win-x64\*"; \
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\wcit\Client\bin\x64\Release\net7.0-windows10.0.22621.0\win-x64\publish\*"; \
       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: corefiles; MinVersion: 6.1sp1;
 
 [Icons]
