@@ -2,7 +2,7 @@
 #define MyAppVersion "0.0.1.8"
 #define MyAppURL "https://github.com/mrkenhoo/wcit"
 #define MyAppExeName "wcit.exe"
-#define MyUsername "mrkenhoo"
+#define MyUsername "fgonmar"
 #define VersionInfoDescription "Windows CLI Installer Tool"
 
 [Setup]
@@ -17,9 +17,9 @@ UsePreviousAppDir=no
 DefaultDirName={autopf}\{#MyUsername}\wcit
 DefaultGroupName={#MyUsername}\wcit
 AllowNoIcons=yes
-LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\wcit\LICENSE
+LicenseFile=C:\Users\{#MyUsername}\OneDrive\GitLab\wcit\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog
-OutputDir=C:\Users\{#MyUsername}\Documents\GitHub\wcit\inno_setup
+OutputDir=C:\Users\{#MyUsername}\OneDrive\GitLab\isscripts\wcit
 OutputBaseFilename=wcit-setup
 Compression=lzma
 SolidCompression=yes
@@ -52,7 +52,7 @@ Name: "corefiles"; Description: "Required program files"; Types: full; Flags: fi
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\wcit\Client\bin\x64\Release\net7.0-windows10.0.22621.0\win-x64\publish\*"; \
+Source: "C:\Users\{#MyUsername}\OneDrive\GitLab\wcit\Client\bin\x64\Release\net7.0-windows10.0.22621.0\publish\win-x64\*"; \
       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: corefiles; MinVersion: 6.1sp1;
 
 [Icons]
