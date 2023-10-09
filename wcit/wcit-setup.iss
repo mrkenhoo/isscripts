@@ -17,9 +17,9 @@ UsePreviousAppDir=no
 DefaultDirName={autopf}\{#MyUsername}\wcit
 DefaultGroupName={#MyUsername}\wcit
 AllowNoIcons=yes
-LicenseFile=C:\Users\{#MyUsername}\OneDrive\GitLab\wcit\LICENSE
+LicenseFile=D:\My Drive\GitLab\wcit\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog
-OutputDir=C:\Users\{#MyUsername}\OneDrive\GitLab\isscripts\wcit
+OutputDir=D:\My Drive\GitLab\isscripts\wcit
 OutputBaseFilename=wcit-setup
 Compression=lzma
 SolidCompression=yes
@@ -34,7 +34,7 @@ VersionInfoProductTextVersion={#MyAppVersion}
 VersionInfoTextVersion={#MyAppVersion}
 WizardResizable=no
 WindowResizable=no                   
-MinVersion=6.1sp1
+MinVersion=10.0
 ArchitecturesAllowed=x64
 
 [Languages]
@@ -52,7 +52,7 @@ Name: "corefiles"; Description: "Required program files"; Types: full; Flags: fi
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\OneDrive\GitLab\wcit\Client\bin\x64\Release\net7.0-windows10.0.22621.0\publish\win-x64\*"; \
+Source: "D:\My Drive\GitLab\wcit\Client\bin\x64\Release\net7.0-windows10.0.22621.0\publish\win-x64\*"; \
       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: corefiles; MinVersion: 6.1sp1;
 
 [Icons]
