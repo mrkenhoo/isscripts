@@ -35,7 +35,7 @@ VersionInfoTextVersion={#MyAppVersion}
 WizardResizable=no
 WindowResizable=no                   
 MinVersion=10.0
-ArchitecturesAllowed=x64
+ArchitecturesAllowed=x64compatible
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
