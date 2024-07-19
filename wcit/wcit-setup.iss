@@ -1,5 +1,5 @@
 #define MyAppName "Windows CLI Installer Tool"
-#define MyAppVersion "0.0.2.1"
+#define MyAppVersion "0.0.4.0"
 #define MyAppURL "https://github.com/mrkenhoo/wcit"
 #define MyAppExeName "wcit.exe"
 #define MyUsername "mrkenhoo"
@@ -17,7 +17,7 @@ UsePreviousAppDir=no
 DefaultDirName={autopf}\{#MyUsername}\wcit
 DefaultGroupName={#MyUsername}\wcit
 AllowNoIcons=yes
-LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\wcit\LICENSE
+LicenseFile=C:\Users\{#MyUsername}\Nextcloud\Documents\GitHub\wcit\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=C:\Users\{#MyUsername}\Documents\GitHub\wcit\
 OutputBaseFilename=wcit-setup
@@ -52,7 +52,7 @@ Name: "corefiles"; Description: "Required program files"; Types: full; Flags: fi
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\wcit\Client\bin\x64\Release\net8.0-windows10.0.22621.0\win-x64\publish\*"; \
+Source: "C:\Users\{#MyUsername}\Nextcloud\Documents\GitHub\wcit\cli_app\build\*"; \
       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: corefiles; MinVersion: 10.0;
 
 [Icons]
